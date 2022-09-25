@@ -3,7 +3,7 @@
 
 ## Overview
 
-App fetches the pic of the day by using NASA an opan api.
+App fetches the pic of the day by using NASA an open api.
 
 
 ## Requirement
