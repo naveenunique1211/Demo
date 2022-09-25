@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Title</key>
+	<dict>
+		<key>value</key>
+		<string>About</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>About Quote</key>
+	<dict>
+		<key>value</key>
+		<string>“The cosmos is all that is, or ever was, or ever will be.” - Carl Sagan.</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>About Body</key>
+	<dict>
+		<key>value</key>
+		<string>This app was born from a strong desire to learn more about space and software development. It displays daily images and videos from our universe while keeping in mind a minimal and user-friendly design.</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Acknowledgements Title</key>
+	<dict>
+		<key>value</key>
+		<string>Acknowledgements</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Acknowledgements Body</key>
+	<dict>
+		<key>value</key>
+		<string>The content featured in the app comes from NASA’s APOD API, a service that has been offering daily pictures of our universe since 1995. It contains the largest collection of annotated astronomical images on the internet.
+
+Illustrations by Tori Duong.</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Acknowledgements Body Attributed Text 1</key>
+	<dict>
+		<key>value</key>
+		<string>NASA’s APOD API</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Acknowledgements Body Attributed Text 2</key>
+	<dict>
+		<key>value</key>
+		<string>Tori Duong</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Version</key>
+	<dict>
+		<key>value</key>
+		<string>Version %@ (%@)</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

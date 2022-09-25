@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerView" customModule="NasaDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCancel" destination="wXu-iC-xKb" id="1KE-Oy-Kfb"/>
+                <outlet property="buttonDone" destination="xW6-u9-2PV" id="6u8-OG-GKm"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NAu-te-8mC"/>
+                <outlet property="heightBottomBarConstraint" destination="uxP-qD-Mwx" id="1A2-cB-VtG"/>
+                <outlet property="heightPickerViewConstraint" destination="4zd-kk-HHc" id="YC9-Vd-lty"/>
+                <outlet property="labelTitle" destination="RQt-nN-tqK" id="TbQ-Hv-MvC"/>
+                <outlet property="pickerContentView" destination="4hg-Fx-IOK" id="1Ma-XP-mPL"/>
+                <outlet property="tapPickerView" destination="aot-Ow-xpN" id="Ycq-ZY-tUG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hg-Fx-IOK">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXu-iC-xKb">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Mvi-60-bZB"/>
+                                <constraint firstAttribute="width" constant="70" id="o92-Tn-5cr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="actionOnCancel:" destination="-1" eventType="touchUpInside" id="X44-0u-ZVV"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQt-nN-tqK">
+                            <rect key="frame" x="78" y="11.5" width="258" height="17.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW6-u9-2PV">
+                            <rect key="frame" x="344" y="0.0" width="70" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <state key="normal" title="Search">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="actionOnDone:" destination="-1" eventType="touchUpInside" id="gaA-d3-gnx"/>
+                            </connections>
+                        </button>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="aot-Ow-xpN">
+                            <rect key="frame" x="0.0" y="40" width="414" height="195"/>
+                            <color key="backgroundColor" name="Accent Color"/>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" name="Accent Color"/>
+                    <constraints>
+                        <constraint firstItem="aot-Ow-xpN" firstAttribute="top" secondItem="wXu-iC-xKb" secondAttribute="bottom" id="1Ti-zr-TTW"/>
+                        <constraint firstAttribute="height" constant="235" id="4zd-kk-HHc"/>
+                        <constraint firstItem="xW6-u9-2PV" firstAttribute="width" secondItem="wXu-iC-xKb" secondAttribute="width" id="7gd-vc-JiP"/>
+                        <constraint firstItem="xW6-u9-2PV" firstAttribute="height" secondItem="wXu-iC-xKb" secondAttribute="height" id="94c-bl-emH"/>
+                        <constraint firstItem="wXu-iC-xKb" firstAttribute="leading" secondItem="4hg-Fx-IOK" secondAttribute="leading" id="I1h-hN-sjb"/>
+                        <constraint firstItem="xW6-u9-2PV" firstAttribute="leading" secondItem="RQt-nN-tqK" secondAttribute="trailing" constant="8" id="Pgd-EN-wm5"/>
+                        <constraint firstItem="wXu-iC-xKb" firstAttribute="top" secondItem="4hg-Fx-IOK" secondAttribute="top" id="Uv1-fS-3IW"/>
+                        <constraint firstAttribute="trailing" secondItem="xW6-u9-2PV" secondAttribute="trailing" id="UzN-5J-eZW"/>
+                        <constraint firstItem="RQt-nN-tqK" firstAttribute="centerY" secondItem="wXu-iC-xKb" secondAttribute="centerY" id="Wrf-yf-3KQ"/>
+                        <constraint firstItem="aot-Ow-xpN" firstAttribute="leading" secondItem="4hg-Fx-IOK" secondAttribute="leading" id="e5W-vz-H63"/>
+                        <constraint firstAttribute="bottom" secondItem="aot-Ow-xpN" secondAttribute="bottom" id="heu-Da-2HN"/>
+                        <constraint firstItem="RQt-nN-tqK" firstAttribute="leading" secondItem="wXu-iC-xKb" secondAttribute="trailing" constant="8" id="mhv-lf-n4D"/>
+                        <constraint firstItem="xW6-u9-2PV" firstAttribute="top" secondItem="4hg-Fx-IOK" secondAttribute="top" id="sqA-yY-w5s"/>
+                        <constraint firstAttribute="trailing" secondItem="aot-Ow-xpN" secondAttribute="trailing" id="tMk-6J-4N2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNv-k7-tNo">
+                    <rect key="frame" x="0.0" y="235" width="414" height="20"/>
+                    <color key="backgroundColor" name="Accent Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="uxP-qD-Mwx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="Accent Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tNv-k7-tNo" secondAttribute="trailing" id="0nw-Mx-LJ2"/>
+                <constraint firstAttribute="bottom" secondItem="tNv-k7-tNo" secondAttribute="bottom" id="AND-Eq-8oA"/>
+                <constraint firstItem="4hg-Fx-IOK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AVr-MF-tID"/>
+                <constraint firstItem="tNv-k7-tNo" firstAttribute="top" secondItem="4hg-Fx-IOK" secondAttribute="bottom" id="MOC-7h-pfn"/>
+                <constraint firstItem="4hg-Fx-IOK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V4B-Cp-MNZ"/>
+                <constraint firstAttribute="trailing" secondItem="4hg-Fx-IOK" secondAttribute="trailing" id="h2c-AV-5sB"/>
+                <constraint firstItem="tNv-k7-tNo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ujI-Er-XKg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="219.375" y="-113.55633802816901"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Accent Color">
+            <color red="0.039215686274509803" green="0.70588235294117652" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

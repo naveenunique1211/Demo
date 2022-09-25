@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Title</key>
+	<dict>
+		<key>value</key>
+		<string>Detail</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Missing Explanation</key>
+	<dict>
+		<key>value</key>
+		<string>There is no description available for this media.</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Today</key>
+	<dict>
+		<key>value</key>
+		<string>Picture of the Day</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Yesterday</key>
+	<dict>
+		<key>value</key>
+		<string>Yesterday</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Copyright</key>
+	<dict>
+		<key>value</key>
+		<string>Copyright: %@</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Save to Photos Succeeded</key>
+	<dict>
+		<key>value</key>
+		<string>Image saved to Photos</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Save to Photos Failed</key>
+	<dict>
+		<key>value</key>
+		<string>Oops! Something went wrong</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Denied Access to Photos Title</key>
+	<dict>
+		<key>value</key>
+		<string>Allow Cosmos access to your photos</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Denied Access to Photos Message</key>
+	<dict>
+		<key>value</key>
+		<string>To save images please allow Cosmos access from Settings.</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Settings Action</key>
+	<dict>
+		<key>value</key>
+		<string>Settings</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>Cancel Action</key>
+	<dict>
+		<key>value</key>
+		<string>Cancel</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-NasaDemo-NasaDemoUITests/Pods-NasaDemo-NasaDemoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Cache/Cache.framework
+${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework
+${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework
+${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework
